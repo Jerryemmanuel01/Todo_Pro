@@ -7,15 +7,6 @@
     position: relative;
 }
 
-.author{
-    position: fixed;
-    bottom: 3.8rem;
-    left: -2.5rem;
-    font-size: 12px;
-    rotate: 270deg;
-    color: #8284fa
-}
-
 .head-txt{
     font-size: 24px;
     font-weight: 700;
@@ -57,4 +48,19 @@
     gap: 6px;
     font-weight: 700;
     font-size: 14px;
+}
+
+@media screen and (max-width: 680px){
+    .newTaskForm{
+        max-width: 550px;
+        height: 40px;
+    }
+    .header{
+        height: 160px;
+    }
+}
+@media screen and (max-width: 500px){
+    .newTaskForm{
+        max-width: 380px;
+    }
 }

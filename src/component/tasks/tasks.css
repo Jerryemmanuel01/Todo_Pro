@@ -43,3 +43,25 @@
     flex-direction: column;
     gap: 12px;
 }
+
+.author{
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    font-size: 10px;
+    font-weight: 700;
+    color: #8284fa
+}
+
+
+@media screen and (max-width: 680px){
+    .tasks{
+        max-width: 550px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 500px){
+    .tasks{
+        max-width: 380px;
+    }
+}

@@ -32,6 +32,7 @@ export function Tasks({ tasks, onComplete, onDelete }) {
           />
         ))}
       </div>
+      <p className="author">BY: Jerryemmanuel</p>
     </section>
   );
 }

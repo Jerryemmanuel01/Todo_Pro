@@ -22,8 +22,7 @@ export function Header({onAddTasks}) {
     <>
       <header className="header">
         <p className="head-txt">TODO PRO</p>
-        <p className="author">BY: Jerryemmanuel</p>
-
+       
         <form onSubmit={handleSubmit} className="newTaskForm">
           <input
             type="text"
