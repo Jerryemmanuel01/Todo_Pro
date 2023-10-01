@@ -57,7 +57,6 @@
 @media screen and (max-width: 680px){
     .tasks{
         max-width: 550px;
-        height: 40px;
     }
 }
 @media screen and (max-width: 500px){

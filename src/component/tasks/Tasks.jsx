@@ -1,8 +1,9 @@
+import { EditTask } from "../edit/Edit";
 import { Task } from "../task/Task";
 import "./tasks.css";
 
 
-export function Tasks({ tasks, onComplete, onDelete }) {
+export function Tasks({ tasks, onComplete, onDelete, onEdit, editTodo }) {
   const taskQty = tasks.length;
   const completedTasks = tasks.filter((task) => task.isCompleted).length;
 
@@ -23,14 +24,22 @@ export function Tasks({ tasks, onComplete, onDelete }) {
       </header>
 
       <div className="list">
-        {tasks.map((task) => (
-          <Task
-            key={task.id}
-            task={task}
-            onComplete={onComplete}
-            onDelete={onDelete}
-          />
-        ))}
+        {tasks.map((task) =>
+          task.isEditing ? (
+            <EditTask 
+              editTodo={editTodo}
+              task={task}
+            />
+          ) : (
+            <Task
+              key={task.id}
+              task={task}
+              onComplete={onComplete}
+              onDelete={onDelete}
+              onEdit={onEdit}
+            />
+          )
+        )}
       </div>
       <p className="author">BY: Jerryemmanuel</p>
     </section>
