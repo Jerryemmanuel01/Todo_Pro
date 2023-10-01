@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Header } from "./component/header/Header";
 import { Tasks } from "./component/tasks/Tasks";
-import { EditTask } from "./component/edit/Edit";
 
 const LOCAL_STORAGE_KEY = "todo:savedTasks";
 
@@ -72,7 +71,6 @@ function App() {
   return (
     <>
       <Header onAddTasks={addTask} />
-      {/* <EditTask /> */}
       <Tasks
         tasks={tasks}
         onComplete={togglecompleted}
